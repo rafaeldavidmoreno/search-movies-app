@@ -24,7 +24,7 @@ let mostrarPelicula = (response) =>{
             <h3>${element.title}</h3>
             <p><strong>Sinopsis:</strong> ${element.overview}</p>
             <p>Fecha de lanzamiento: ${element.release_date}</p>
-            <p>Calificación: ${element.vote_average}</p>
+            <p><span style="color:gold; font-size:1em; vertical-align:middle;">&#11088;</span> Calificación: ${element.vote_average} </p>
         `;
         document.getElementById("results").appendChild(div);
     });
