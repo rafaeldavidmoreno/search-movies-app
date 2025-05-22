@@ -120,7 +120,7 @@
     align-items: center;
     gap: 12px;
   }
-  #results span {
+  #notFoundSpan {
     width: 90vw;
     min-width: 0;
     padding: 10px 6px;
