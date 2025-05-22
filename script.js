@@ -11,7 +11,7 @@ document.getElementById("searchButton").addEventListener("click", async () => {
 let mostrarPelicula = (response) =>{
     document.getElementById("results").innerHTML = ""; // Limpiar resultados anteriores
     if (response.results.length === 0) {
-        document.getElementById("results").innerHTML = "<span>No se encontraron resultados.</span>";
+        document.getElementById("results").innerHTML = "<span id='notFoundSpan'>No se encontraron resultados.</span>";
         return;
     }
 
