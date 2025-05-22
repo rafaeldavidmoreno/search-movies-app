@@ -22,7 +22,7 @@ let mostrarPelicula = (response) =>{
         div.innerHTML = `
             <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt="${element.title}">
             <h3>${element.title}</h3>
-            <p>${element.overview}</p>
+            <p>Sinopsis: ${element.overview}</p>
             <p>Fecha de lanzamiento: ${element.release_date}</p>
             <p>Calificación: ${element.vote_average}</p>
         `;
