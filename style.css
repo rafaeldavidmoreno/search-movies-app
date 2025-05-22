@@ -1,0 +1,153 @@
+.container {
+   
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+ #results {
+  margin-top: 20px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+#results span {
+  color: #ff5252;
+  background: #fff3f3;
+  border: 1px solid #ffb3b3;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 24px;
+  width: 100%;
+}
+
+/* Puedes agregar esto en tu archivo CSS */
+.pelicula {
+  background: #222;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  padding: 16px;
+  margin: 16px;
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.pelicula img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.pelicula h3 {
+  margin: 10px 0 8px 0;
+  font-size: 1.25em;
+  color: #ffd700;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px #111;
+}
+
+.pelicula p {
+  font-size: 1em;
+  margin: 8px 0;
+  color: #e0e0e0;
+  line-height: 1.4;
+  background: rgba(40,40,40,0.7);
+  border-radius: 6px;
+  padding: 8px 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.pelicula:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 8px;
+  }
+
+  input[type="text"] {
+    width: 90vw;
+    min-width: 0;
+    font-size: 1em;
+    padding: 10px 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 0;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  #results {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  #results span {
+    width: 90vw;
+    min-width: 0;
+    padding: 10px 6px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+
+  .pelicula {
+    width: 90vw;
+    min-width: 0;
+    margin: 8px 0;
+    padding: 10px;
+  }
+
+  .pelicula img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+  .pelicula h3 {
+    font-size: 1.1em;
+  }
+
+  .pelicula p {
+    font-size: 0.95em;
+    padding: 6px 6px;
+  }
+}
