@@ -32,7 +32,7 @@
   justify-content: center;
 }
 
-#results span {
+#notFoundSpan {
   color: #ff5252;
   background: #fff3f3;
   border: 1px solid #ffb3b3;
@@ -120,7 +120,7 @@
     align-items: center;
     gap: 12px;
   }
-  #notFoundSpan {
+  #results span {
     width: 90vw;
     min-width: 0;
     padding: 10px 6px;
